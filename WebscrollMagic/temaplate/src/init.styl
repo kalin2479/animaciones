@@ -1,0 +1,92 @@
+#intro
+	height 100vh
+	background radial-gradient(circle, #74A6EE 0%,#485CB2 100%)
+	text-align center
+	color #fff
+	.container
+		padding-top 30px
+		@media screen and (min-width:750px)
+			padding-top 80px
+		p
+			width 100%
+			line-height 1.5em
+			text-align center
+			margin auto
+			@media screen and (min-width:750px)
+				width 70%
+				line-height 1.85em
+.project
+	text-align center
+	padding 200px 0
+	border-bottom 1px solid #ebebeb
+	opacity 0
+	//transform translateY(150px)
+	transition all 1s ease-out 0.5s
+	&.fade-in
+		opacity 1
+		//transform translateY(0px)	
+	img
+		width 250px
+	p
+		width 100%
+		margin 0 auto
+		line-height 1.75em
+		color #294067
+		@media screen and (min-width:750px)
+			width 50%
+#project01
+	h2
+		color red
+#project02
+	background lightblue
+	h2
+		color blue
+#project03
+	h2
+		color yellow
+#main
+	relative top 0 left 0
+	background white
+.bcg-parallax
+	padding 150px 0
+	color #fff
+	background-color #000
+	text-align center
+	relative top left
+	overflow hidden
+.bcg
+	background url('../images/mac.jpg') no-repeat
+	background-size cover
+	absolute top left
+	width 100%
+	height 140%
+	z-index 1
+	opacity 0.7
+.content-wrapper
+	width 90%
+	margin 0 auto
+	max-width 1140px
+	relative top left
+	z-index 2
+.footer-container
+	text-align center
+	font-size 14px
+	color rgba(255,255,255,.5)
+	background-color #06060d
+.footer-container h3
+	margin 0
+	padding 20px 0
+	font-weight bold
+.footer-container a
+	color rgba(255,255,255,.5)
+.container
+	width 100%
+	margin auto
+	@media screen and (min-width:480px)
+		width 90%
+	@media screen and (min-width:750px)
+		width 700px
+	@media screen and (min-width:992px)
+		width 961px
+	@media screen and (min-width:1200px)
+		width 1190px

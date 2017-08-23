@@ -1,0 +1,38 @@
+.avatar{
+	position: relative;
+}
+.avatar input[type='file']{
+	display: none;
+}
+.profile{
+	text-align: center;
+}
+.profile p{
+	padding-top: 30px;
+}
+.card{
+	background: white;
+	border-radius: 2px;
+	width: 300px;
+	height : 400px;
+	box-shadow : 0px 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.avatar-selector{
+	background-color: #009688;
+	color: white;
+	border-radius: 50%;
+	padding: 0.8em;
+	cursor: pointer;
+	position: absolute;
+	right: 2.5em;
+	bottom: 2.5em;
+}
+.profile .img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;   
+}

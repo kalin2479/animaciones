@@ -1,0 +1,54 @@
+html, body{
+	margin: 0;
+}
+.slider{
+	width: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.slider .controls ul{
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	bottom: 1em;
+	margin: 0px;
+	width: 100%;
+	z-index: 6;
+}
+.slider .controls li{
+	list-style-type: none;
+	background-color: #444;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	margin-right: 5px;
+	display: inline-block;
+	cursor: pointer; 
+}
+.slider .controls li.active{
+	background-color: blue; 
+}
+.slider .container{
+	white-space: nowrap; /*Nos aseguramos que los elementos se coloquen al lado derecho de modo infinito*/
+	position: relative;
+	transition : all 0.3s;
+	/*
+		el primer elemento no tiene animacion para solucionar eso le asignamos el
+		valor a left
+	*/
+	left: 0px;
+}
+.slider .container *{
+	/*
+	Debemos asegurar que los cambios vuelvan a su estado normal
+	No se vean afectados, porque sino habram bugs raros, como los
+	textos estaran en la misma linea y no vajaran 
+	*/
+	white-space: normal;
+}
+.slider img{
+	width: 100%;
+	display: inline-block;
+	margin-right: -4px; /* Para que no haya un espacio entre elemento*/
+}

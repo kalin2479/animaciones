@@ -1,0 +1,23 @@
+body{
+	text-align: center;
+	font-family: "Arial";
+}
+ul{
+	display: inline-block;
+}
+li{
+	list-style-type: none;
+}
+.card{
+	background: white;
+	margin-top: 10px;
+	padding: 7px; 
+	border-radius: 2px;
+	width: 400px;
+	height : 100px;
+	box-shadow : 0px 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, 0.12);
+	
+}
+.dragging{
+	position: fixed;
+}
