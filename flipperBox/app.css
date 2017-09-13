@@ -1,0 +1,116 @@
+html, body{
+	margin: 0;
+	pading: 0; 
+	background: #f9d352;
+}
+.introBox{
+	width: 350px;
+	height: 50px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	overflow: hidden;
+	transform: translate(-50%,-50%);
+	perspective: 800px;
+}
+.msg{
+	font-family: 'Arial';
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -4px;
+	font-size: 30px;
+	line-height: 1.75em;
+	text-align: right;
+}
+.box{
+	width: 200px;
+	float: right;
+	transform-style: preserve-3d;
+	animation: rotate 10s ease-in-out infinite;
+}
+#skill1{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	transform: translateZ(100px);
+	background: #e0513a;
+}
+#skill2{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	transform: rotateY(-90deg) translateX(-100px);
+	background: #e0513a;
+	transform-origin: left;
+}
+#skill3{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	transform: rotateY(180deg) translateZ(100px);
+	background: #e0513a;
+	//transform-origin: left;
+
+}
+#skill4{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	transform: rotateY(90deg) translateX(100px);
+	background: #e0513a;
+	transform-origin: right;
+
+}
+
+@-webkit-keyframes rotate {
+	0%{
+		transform: rotateY(0);
+	}
+	25%{
+		transform: rotateY(90deg);
+	}
+	50%{
+		transform: rotateY(180deg);
+	}
+	75%{
+		transform: rotateY(270deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotateY(0);
+	}
+	25%{
+		transform: rotateY(90deg);
+	}
+	50%{
+		transform: rotateY(180deg);
+	}
+	75%{
+		transform: rotateY(270deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
